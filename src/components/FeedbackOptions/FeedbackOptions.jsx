@@ -29,4 +29,3 @@ FeedbackOptions.propTypes = {
 };
 
 export default FeedbackOptions;
-//random comment
