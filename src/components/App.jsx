@@ -11,12 +11,19 @@ function App() {
 
   const onHandleClick = e => {
     const { value } = e.target.attributes.option;
-    if (value === 'good') {
-      setGood(state => state + 1);
-    } else if (value === 'neutral') {
-      setNeutral(state => state + 1);
-    } else if (value === 'bad') {
-      setBad(state => state + 1);
+
+    switch (value) {
+      case 'good':
+        setGood(state => state + 1);
+        break;
+      case 'neutral':
+        setNeutral(state => state + 1);
+        break;
+      case 'bad':
+        setBad(state => state + 1);
+        break;
+      default:
+        break;
     }
   };
 
