@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './Statistics.module.css';
+import { List } from './Statistics.styled';
 import PropTypes from 'prop-types';
 
 function Statistics({ bad, good, neutral, total, positivePercentage }) {
   return (
     <>
-      <ul className={s.listStats}>
+      <List>
         <li>
           Good: <span>{good}</span>
         </li>
@@ -21,7 +21,7 @@ function Statistics({ bad, good, neutral, total, positivePercentage }) {
         <li>
           Positive feedback: <span>{positivePercentage + '%'}</span>
         </li>
-      </ul>
+      </List>
     </>
   );
 }
